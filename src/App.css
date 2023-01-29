@@ -8,17 +8,61 @@
 .pokedex {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .left-card {
     background-color: antiquewhite;
     display: block;
     margin: 10% 0 0 15%;
-    
 }
 
 .right-card {
     background-color: aquamarine;
     display: block;
     margin: 10% 15% 0 0;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    line-height: 35px;
+}
+
+.top {
+    display: block;
+    position: relative;
+    height: 400px;
+}
+
+.bottom {
+    -webkit-column-count: 2;
+    column-fill: balance;
+    height: 400px;
+}
+
+.pokemon-info {
+    display: block;
+    padding-top: 15%;
+}
+
+.only-front-sprite {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.no-image {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+}
+
+button {
+    width: 50px;
+    margin-top: 15%;
 }

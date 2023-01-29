@@ -20,11 +20,16 @@ const PokemonInfo = () => {
             setPokemonWeight(json.weight/10);
             setPokemonAbilities(json.abilities.map(data => data.ability));
         })
-    })
+    }, [pokemon.selected])
 
   return (
-    <div className='right-card'>
-        <span> {pokemon.selected.toUpperCase()} </span>{pokemon.selected.toUpperCase()} N° {pokemonNationalNumber} <br/>
+    <div className='pokemon-info'>
+      {pokemon.selected.toUpperCase()} <br/>
+      National N° {pokemonNationalNumber} <br/>
+      {`Type: ${pokemonType.length > 1 ? pokemonType[0] + ' ' + pokemonType[1]: pokemonType[0]}`} <br/>
+      {`Height: ${pokemonHeight} m`}  <br/>
+      {`Weight: ${pokemonWeight} kg`} <br/>
+      {`Abilities: ${pokemonAbilities.map(data => ' ' + data.name.toUpperCase())}`}
     </div>
   )
 }
