@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+p, .pokemon-info {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+}
+
 .pokedex {
     display: flex;
     align-items: center;
