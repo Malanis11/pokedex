@@ -23,6 +23,8 @@ const PokemonList = ({currentPageURL}) => {
             <p onClick={e => {dispatch(setSelectedPokemon(e.target.innerHTML.toLowerCase().trim())); console.log(e.target.innerHTML.toLowerCase().trim())}}  key={pokemon} value={pokemon}> {pokemon.toUpperCase()} </p>
         ))}
     </div>
+    
+
   )
 }
 

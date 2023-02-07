@@ -5,27 +5,38 @@
     box-sizing: border-box;
 }
 
-p, .pokemon-info {
+.pokemon-info {
     font-family: 'Press Start 2P', cursive;
     font-weight: bold;
+}
+
+p {
+    font-weight: bold;
+}
+
+p:hover {
+    background-color: darkgrey;
+    cursor: pointer;
 }
 
 .pokedex {
     display: flex;
     align-items: center;
     position: relative;
+    padding: 100px 0 100px 0;
 }
 
 .left-card {
-    background-color: antiquewhite;
+    background-color: black;
     display: block;
-    margin: 10% 0 0 15%;
+    border: 20px solid red;
+    border-top-left-radius: 2%;
+    margin: 0 0 0 15%;
 }
 
 .right-card {
-    background-color: aquamarine;
     display: block;
-    margin: 10% 15% 0 0;
+    margin: 0 15% 0 0;
     height: 100%;
     position: relative;
     text-align: center;
@@ -34,19 +45,28 @@ p, .pokemon-info {
 
 .top {
     display: block;
+    background-color: darkgrey;
     position: relative;
-    height: 400px;
+    height: 100%;
+    border-top-right-radius: 2%;
+    border: 28px solid red;
 }
 
 .bottom {
-    -webkit-column-count: 2;
-    column-fill: balance;
-    height: 400px;
+    -webkit-column-count: 3;
+    column-fill: balance-all;
+    column-rule: solid;
+    column-rule-color: red;
+    column-rule-width: 15px;
+    border: 30px solid red;
+    background-color: skyblue;
+    height: 100%;
 }
 
 .pokemon-info {
     display: block;
-    padding-top: 15%;
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 .only-front-sprite {
@@ -59,15 +79,21 @@ p, .pokemon-info {
     margin-bottom: 200px;
 }
 
+.App > img {
+    height: 300px;
+    width: 500px;
+}
+
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 275px;
 }
 
 button {
     width: 50px;
     margin-top: 15%;
+    position: relative;
 }

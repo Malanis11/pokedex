@@ -24,9 +24,8 @@ const PokemonInfo = () => {
 
   return (
     <div className='pokemon-info'>
-      {pokemon.selected.toUpperCase()} <br/>
-      National N° {pokemonNationalNumber} <br/>
-      {`Type: ${pokemonType.length > 1 ? pokemonType[0] + ' ' + pokemonType[1]: pokemonType[0]}`} <br/>
+      No.{pokemonNationalNumber} {pokemon.selected.toUpperCase()} <br/>
+      {`Type: ${pokemonType.length > 1 ? pokemonType[0] + ', ' + pokemonType[1]: pokemonType[0]}`} <br/>
       {`Height: ${pokemonHeight} m`}  <br/>
       {`Weight: ${pokemonWeight} kg`} <br/>
       {`Abilities: ${pokemonAbilities.map(data => ' ' + data.name.toUpperCase())}`}

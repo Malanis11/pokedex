@@ -5,6 +5,7 @@ import { setSelectedPokemon, setURL } from './redux/pokemonSlice'
 import PokemonImg from './components/PokemonImg';
 import PokemonInfo from './components/PokemonInfo';
 import PokemonList from './components/PokemonList';
+import PokemonLogo from './pokemon-logo.png'
 
 function App() {
   const [currentPageURL, setCurrentPageURL] = useState('https://pokeapi.co/api/v2/pokemon/')
@@ -33,6 +34,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={PokemonLogo} alt="pokemon-logo" />
       <div className='pokedex'>
         <div className="left-card">
           <PokemonImg />
